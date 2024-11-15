@@ -14,7 +14,7 @@ import { client, wallet } from "@/app/constant";
 function Header() {
 
   return (
-    <div className="flex justify-between p-4 items-center">
+    <div className="flex justify-between p-4 bg-transparent items-center">
             <div className="flex items-center gap-2">
               <Image
               src='/logos/Profile-LogoOP.png'
