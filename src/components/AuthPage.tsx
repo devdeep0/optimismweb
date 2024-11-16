@@ -20,69 +20,32 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
   return (
     <>
       <Header/>
-      <div className="flex min-h-screen bg-[#FFF3F3]">
-      <div className="w-full max-w-md mx-auto bg-[#FFF3F3] rounded-3xl overflow-hidden">
-        <div className="p-4 space-y-6">
-          {/* Header */}
+      <div className="flex min-h-screen bg-black">
+      <div className="w-full max-w-md mx-auto bg-black text-white rounded-3xl flex flex-col gap-4 overflow-hidden">
+        <div className="p-4 ">
          
-
-          {/* Welcome Text */}
-          <div className="space-y-1">
-            <h1 className="text-[#FF0000] text-2xl font-bold leading-tight">
-              Welcome to Super Chain Odyssey telegram bot.
-            </h1>
-          </div>
-
-          {/* City Illustration */}
-          <div className="relative w-full aspect-[2/1] bg-[#FF0000] rounded-xl overflow-hidden">
-            <Image
-              src="/slide/optimism-cityOP.png"
-              alt="Isometric city illustration"
-              width={800}
-              height={400}
-              className="object-cover"
-            />
-          </div>
-
-          {/* Games Section */}
-          <div className="space-y-6">
-            <h2 className="text-xl font-semibold">Games</h2>
-            <div className="space-y-3">
-              {/* Game Item */}
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                <Image
-                    src="/gameimg/crashy.png"
-                    alt="Crashy Chase"
-                    width={58}
-                    height={58}
-                    className="rounded-xl"
-                  />
-                                    <span className="font-medium text-[#FF0000] text-[16px]">Crashy Chase</span>
-                </div>
-                <button 
-                className='bg-[#FF0000] text-white hover:bg-[#FF0000]/90 rounded-full px-8 py-1'
-                      onClick={() => onGameSelect("unity3")}
-                      disabled={isLoading}
-                      
-                      >
-                  Play
-                </button>
-              </div>
-
-              {/* Coming Soon Items */}
-              <div className="text-gray-500">More Games Coming Soon!</div>
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="flex items-center justify-between opacity-40">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-gray-200 rounded-xl" />
-                    <div className="w-24 h-4 bg-gray-200 rounded" />
-                  </div>
-                  <div className="w-16 h-8 bg-gray-200 rounded-full" />
-                </div>
-              ))}
-            </div>
-          </div>
+            <h2 className="text-xl text-center text-white text-[24px] font-bold font-zk">Games</h2>
+         
+        </div>
+        <div className='flex   justify-center'>
+        <div className='bg-white w-[316px] flex items-center justify-center rounded-[20px] h-[316px]'>
+          <Image
+          className='p-1 rounded-[20px]'
+          src='/gameimg/crashy.png'
+          alt=''
+          width={316}
+          height={316}
+          />
+        </div>
+        </div>
+        <div className='w-full flex items-center justify-center'>
+        <div className='bg-[#FF0420] mt-2 w-[305px] text-center font-zk text-[30px] flex items-center justify-center font-bold rounded-[10px] text-white'>PLAY</div>
+        </div>
+        <div className='w-full flex items-center justify-center mt-3'>
+        <div className='w-[312px] '>
+          <h1 className='font-bold font-zk text-[20px] text-[#FF0420]'>Crashy Chase</h1>
+          <div className='font-medium text-[12px] font-zk'>About : In this thrilling 3D game, players control a car speeding through a plain landscape, pursued by relentless enemy vehicles. The challenge intensifies as players must skillfully dodge oncoming cars, swerve around trees, and stay alert for sudden bombs dropped from the sky.</div>
+        </div>
         </div>
       </div>
     </div>
