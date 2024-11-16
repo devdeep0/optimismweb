@@ -22,9 +22,9 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
       <Header/>
       <div className="flex min-h-screen bg-black">
       <div className="w-full max-w-md mx-auto bg-black text-white rounded-3xl flex flex-col gap-4 overflow-hidden">
-        <div className="p-4 ">
+        <div className="p-1 pt-7 ">
          
-            <h2 className="text-xl text-center text-white text-[24px] font-bold font-zk">Games</h2>
+            <h2 className="text-xl text-center text-white text-[28px] font-bold font-zk">Games</h2>
          
         </div>
         <div className='flex   justify-center'>

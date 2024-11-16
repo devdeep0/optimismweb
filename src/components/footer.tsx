@@ -37,7 +37,7 @@ export default function Component() {
         </motion.div>
       )}
 
-      <footer className="fixed border-t-2 border-[#FF0420] bottom-0 w-full border-t bg-white">
+      <footer className="fixed border-t-2 border-[#FF0420] bottom-0 w-full  bg-white">
         <nav className="container flex h-16 items-center justify-around">
           <FaChartSimple
             className="opacity-100 cursor-pointer w-6 h-6"
