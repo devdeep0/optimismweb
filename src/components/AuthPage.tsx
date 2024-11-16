@@ -39,7 +39,9 @@ const GameSelectionUI : React.FC<GameSelectionUIProps> = ({ isLoading, selectedG
         </div>
         </div>
         <div className='w-full flex items-center justify-center'>
-        <div className='bg-[#FF0420] mt-2 w-[305px] text-center font-zk text-[30px] flex items-center justify-center font-bold rounded-[10px] text-white'>PLAY</div>
+        <button onClick={() => onGameSelect("unity3")}
+                      disabled={isLoading}
+                       className='bg-[#FF0420] mt-2 w-[305px] text-center font-zk text-[30px] flex items-center justify-center font-bold rounded-[10px] text-white'>PLAY</button>
         </div>
         <div className='w-full flex items-center justify-center mt-3'>
         <div className='w-[312px] '>
